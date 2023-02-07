@@ -1,0 +1,406 @@
+{
+	"info": {
+		"_postman_id": "12a908bf-a21f-455b-9ff6-6b26a49a3a85",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7605098"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44380/api/Cliente/4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/Cliente/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Cliente",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/Cliente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Cliente/AddCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ClienteId\":0,\r\n    \"Contrasenia\":\"5555\",\r\n    \"Estado\":true,\r\n    \"PersonaId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/Cliente/AddCliente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Cliente",
+						"AddCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Cliente/UpdateCliente/4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ClienteId\":4,\r\n    \"Contrasenia\":\"5756\",\r\n    \"Estado\":true,\r\n    \"PersonaId\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/Cliente/UpdateCliente/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Cliente",
+						"UpdateCliente",
+						"4"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Cliente/DeleteCliente/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/Cliente/DeleteCliente/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Cliente",
+						"DeleteCliente",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Cuenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/Cuenta",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Cuenta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Cuenta/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/Cuenta/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Cuenta",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Cuenta/AddCuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CuentaId\":0,\r\n    \"NumeroCuenta\":585545,\r\n    \"TipoCuenta\":\"Corriente\",\r\n    \"SaldoInicial\":1000,\r\n    \"Estado\":true,\r\n    \"ClienteId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/Cuenta/AddCuenta",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Cuenta",
+						"AddCuenta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Cuenta/UpdateCuenta/5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CuentaId\":5,\r\n    \"NumeroCuenta\":585545,\r\n    \"TipoCuenta\":\"Corriente\",\r\n    \"SaldoInicial\":1500,\r\n    \"Estado\":true,\r\n    \"ClienteId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/Cuenta/UpdateCuenta/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Cuenta",
+						"UpdateCuenta",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Cuenta/DeleteCuenta/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/Cuenta/DeleteCuenta/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Cuenta",
+						"DeleteCuenta",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Movimiento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/Movimiento",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Movimiento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Movimiento/AddMovimiento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MovimientoId\":0,\r\n    \"Fecha\":\"2017-11-01T00:00:00\",\r\n    \"TipoMovimiento\":\"Deposito\",\r\n    \"Valor\":600,\r\n    \"Saldo\":0,\r\n    \"CuentaId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/Movimiento/AddMovimiento",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Movimiento",
+						"AddMovimiento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Movimiento/AddMovimiento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MovimientoId\":0,\r\n    \"Fecha\":\"2017-11-01T00:00:00\",\r\n    \"TipoMovimiento\":\"Deposito\",\r\n    \"Valor\":600,\r\n    \"Saldo\":0,\r\n    \"CuentaId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/Movimiento/AddMovimiento",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Movimiento",
+						"AddMovimiento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Movimiento/AddMovimiento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MovimientoId\":0,\r\n    \"Fecha\":\"2017-11-01T00:00:00\",\r\n    \"TipoMovimiento\":\"Deposito\",\r\n    \"Valor\":150,\r\n    \"Saldo\":0,\r\n    \"CuentaId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/Movimiento/AddMovimiento",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Movimiento",
+						"AddMovimiento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44380/api/Movimiento/Reporte?fecha=2023/02/01&nombre=Marianela Montalvo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/api/Movimiento/Reporte?fecha=2023/02/01&nombre=Marianela Montalvo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Movimiento",
+						"Reporte"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2023/02/01"
+						},
+						{
+							"key": "nombre",
+							"value": "Marianela Montalvo"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
